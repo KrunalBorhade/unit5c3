@@ -1,6 +1,16 @@
+import {useState,useEffect} from "react"
+import {axios} from "react"
+
+
+
 export const Login = () => {
   //  use reqres to log user in.
 
+  const [loginUser,setLoginUser] = useState({
+    name:"",
+    password:""
+  })
+  
   return (
     <form className="loginform">
       <input
